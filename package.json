@@ -1,0 +1,13 @@
+{
+  "name": "lammod-domain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local demo for LamMOD Domain names and resolver",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

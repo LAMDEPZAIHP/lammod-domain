@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#15111f">
+  <title>LamMOD Domain</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">✦ LamMOD <span>Domain</span></a>
+    <span class="status"><i></i> DEMO</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FREE SUBDOMAIN LAB</p>
+      <h1>Tên của bạn.<br><span>Không gian của bạn.</span></h1>
+      <p class="intro">Tạo tên miền thử nghiệm và liên kết nó tới website đang hoạt động. Không cần mua domain để chạy bản demo này.</p>
+      <div class="preview"><span id="previewName">tenban</span><b>.lammod</b></div>
+    </section>
+    <section class="panel">
+      <h2>Tạo tên miền</h2>
+      <form id="createForm">
+        <label for="name">Tên bạn muốn</label>
+        <div class="name-row"><input id="name" name="name" maxlength="30" minlength="3" pattern="[A-Za-z0-9]+([\-][A-Za-z0-9]+)*" placeholder="tenban" required><span>.lammod</span></div>
+        <label for="destination">URL website đích</label>
+        <input id="destination" name="destination" type="url" placeholder="https://example.com" required>
+        <p class="hint">Chỉ dùng website bạn sở hữu hoặc được phép liên kết. URL đích sẽ hiển thị cho người truy cập.</p>
+        <button type="submit" id="submitBtn">Tạo tên miền miễn phí <span>↗</span></button>
+      </form>
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+    </section>
+    <section class="panel">
+      <div class="section-head"><h2>Tên miền đã tạo</h2><button id="refreshBtn" class="secondary" type="button">Làm mới</button></div>
+      <div id="domainList" class="domain-list"><p class="muted">Đang tải...</p></div>
+    </section>
+    <section class="notice">
+      <b>⚠️ Bản thử nghiệm</b>
+      <p><code>tenban.lammod</code> chưa phải domain công khai. Dùng nút “Mở resolver” để tới trang trung gian rồi xác nhận trước khi mở website đích.</p>
+    </section>
+  </main>
+  <footer>Powered by LamMOD · Domain Lab</footer>
+</body>
+</html>
